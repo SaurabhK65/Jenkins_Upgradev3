@@ -45,4 +45,12 @@ public class TestGreeter {
     assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
     }
 
+    @Test
+  public void greetShouldIncludeGreetingMessageCustomTest() {
+    String someone = "World, Thanks you making me Happy to learn Jenkins and Plugins";
+
+    assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
+    }
+
 }
+
